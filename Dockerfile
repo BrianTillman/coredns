@@ -1,5 +1,5 @@
-ARG DEBIAN_IMAGE=debian:stable-slim
-ARG BASE=gcr.io/distroless/static-debian11:nonroot
+ARG DEBIAN_IMAGE=golang:1.22-bookworm
+ARG BASE=gcr.io/distroless/static-debian12:nonroot
 FROM --platform=$BUILDPLATFORM ${DEBIAN_IMAGE} AS build
 SHELL [ "/bin/sh", "-ec" ]
 
